@@ -12,6 +12,7 @@ class LinksController < ApplicationController
     if @link.save 
      redirect_to link_path(@link)
     else
+     flash.now.notice = @link.errors.full_messages.to_sentence
      render :new
     end 
   end

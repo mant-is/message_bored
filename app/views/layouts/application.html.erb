@@ -11,6 +11,9 @@
   </head>
 
   <body>
+    <% flash.each do |type, message| %>
+      <p><%= "#{ type.titleize }: #{ message.downcase }" %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>
