@@ -21,6 +21,7 @@ end
 
 group :test do
   gem 'database_cleaner', '~> 2.0', '>= 2.0.1'
+  gem 'shoulda-matchers', '~> 4.5', '>= 4.5.1'
 end
 
 group :development do

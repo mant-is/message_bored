@@ -1,0 +1,10 @@
+<% if target.errors.any? %>
+  <div>
+    <h3><%= pluralize(target.errors.count, 'error') %>&nbsp;prohibited this link from being saved.</h3>
+    <ul>
+      <% target.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
