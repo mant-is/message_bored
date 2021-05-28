@@ -1,0 +1,6 @@
+<%= content_tag :li, link, id: "link_#{ link.id }" do %>
+  <%= link_to 'Upvote', [link, :upvote], method: :post %>
+  <%= tag.div link.score, data: { role: :score } %>
+  <%= link_to 'Downvote', [link, :downvote], method: :post %>
+  <%= link_to link.title, link.url %>
+<% end %>

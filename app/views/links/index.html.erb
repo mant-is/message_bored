@@ -1,8 +1,4 @@
 <%= link_to 'Submit a new link', new_link_path %>
-
-<% if @links  %>
-  <% @links.each do |link|%> 
-    <%= link_to link.title, link.url %>
-  <% end %>
-<% end %>
-
+<div class='links'>
+  <%= render partial: 'link', collection: @links, as: :link %>
+</div>
