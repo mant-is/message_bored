@@ -1,4 +1,4 @@
 <%= link_to 'Submit a new link', new_link_path %>
-<div class='links'>
+<ul id='links'>
   <%= render partial: 'link', collection: @links, as: :link %>
-</div>
+</ul>

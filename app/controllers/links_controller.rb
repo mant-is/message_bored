@@ -1,7 +1,7 @@
 class LinksController < ApplicationController
 
   def index
-    @links = Link.all
+    @links = Link.rank_links
   end
 
   def new

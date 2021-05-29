@@ -13,5 +13,9 @@ class Link < ApplicationRecord
     upvotes - downvotes
   end 
  
+  def self.rank_links
+    order(Arel.sql("upvotes - downvotes DESC"))
+  end
+
 end
 
