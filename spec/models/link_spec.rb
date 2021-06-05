@@ -18,7 +18,7 @@ RSpec.describe Link, '.rank_links' do
 end
 
 RSpec.describe Link, '#downvote' do
-  it 'decrements upvotes' do
+  it 'increments downvotes' do
     link = build(:link, downvotes: 1)
     link.downvote
 
